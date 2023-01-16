@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="/AdminMainPage/myjs.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navContainer">
+        <header>
+            <H3 onclick="loadMainAdminPage()" class="logo" style="color: aliceblue;">MG CAR RENTAL</H3>
+            <nav>
+                <ul class="links">
+
+                    <li><a href="#" id="carsNav">Cars</a></li>
+                    <li><a href="#" id="rentsNav">Rents</a></li>
+                    <li><a href="#" id="usersNav">Users</a></li>
+                </ul>
+            </nav>
+
+            <div id="rightSideNav">
+                <div id="nameNav" style="color: white;"></div>
+                <a class="signup" href="#"><button id="logOutNav">Log out</button></a>
+            </div>
+        </header>
+
+        <div style="display:none;" id="newCarBtnDiv">
+            <input id="newCarBtn" type="button" value="New car">
+        </div>
+
+        <div style="display:none;" id="tableDiv">
+            <div>
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Brand</th>
+                            <th>Name</th>
+                            <th>License plate</th>
+                            <th>Production date</th>
+                            <th>Engine</th>
+                            <th>Classification</th>
+                            <th>Gear box</th>
+                            <th>Doors</th>
+                            <th>Seats</th>
+                            <th>Price per day</th>
+                            <th> </th>
+                            <th> </th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="tableData"></tbody>
+                </table>
+
+            </div>
+        </div>
+
+        <div style="display: none;" id="updateCarDiv">
+            <div class="mainContainer">
+                <div id="title"></div>
+                <div>Update car details</div>
+                <form id="carForm" action="#">
+                    <div class="carDetails">
+                        <div class="inputBox">
+                            <span class="details">Brand</span>
+                            <select name="brand" id="brand">
+                                <option id="BMW" value="BMW">BMW</option>
+                                <option id="AUDI" value="AUDI">Audi</option>
+                                <option id="VOLKSWAGEN" value="VOLKSWAGEN">Volkswagen</option>
+                                <option id="TESLA" value="TESLA">Tesla</option>
+                                <option id="PORSHE" value="PORSHE">Porshe</option>
+                                <option id="FERRARI" value="FERRARI">Ferrari</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Name</span>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">License Plate</span>
+                            <input type="text" name="licensePlate" id="licensePlate">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Production date</span>
+                            <input type="date" id="productionDate">
+
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Engine</span>
+                            <input type="text" name="engine" id="engine">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Classification</span>
+                            <select name="classification" id="classification">
+                                <option id="SUV" value="SUV">Suv</option>
+                                <option id="SPORT" value="SPORT">Sport</option>
+
+                                <option id="MINIVAN" value="MINIVAN">Minivan</option>
+                                <option id="ECONOMY" value="ECONOMY">Economy</option>
+                                <option id="STANDART" value="STANDART">Standart</option>
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Gear box</span>
+                            <select name="GearBox" id="gearBox">
+                                <option id="AT" value="AT">Automatic</option>
+                                <option id="MT" value="MT">Manual</option>
+
+                            </select>
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Doors</span>
+                            <input type="text" name="doors" id="doors">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Seats</span>
+                            <input type="text" name="seats" id="seats">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Price per day</span>
+                            <input type="text" name="pricePerDay" id="pricePerDay">
+                        </div>
+                        <div style="display: none;" id="rented"></div>
+
+
+
+                    </div>
+                    <div id="carFormButton" class="button">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div style="display: none;" id="rentTableDiv">
+            <div>
+                <table id="rentTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Start date</th>
+                            <th>End date</th>
+                            <th>Total price</th>
+                            <th>Total price with discount</th>
+                            <th>Discount</th>
+                            <th>User</th>
+                            <th>Car</th>
+                            <th> </th>
+                            <th> </th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="rentTableData"></tbody>
+                </table>
+
+            </div>
+        </div>
+
+
+
+        <div style="display: none;" id="updateRentDiv">
+            <div class="mainContainer">
+                <div id="title"></div>
+                <div>Update rent details</div>
+                <form id="rentForm" action="#">
+                    <div class="rentDetails">
+
+                        <div class="inputBox">
+                            <span class="details">Start date</span>
+                            <input type="date" id="startDate">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">End date</span>
+                            <input type="date" id="endDate">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Total price</span>
+                            <input type="text" name="totalPrice" id="totalPrice">
+                        </div>
+
+                        <div class="inputBox">
+                            <span class="details">Discount</span>
+                            <input type="text" name="discount" id="discount">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" name="rentUpdate" id="rentUpdate" value="Update">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div style="display: none;" id="userTableDiv">
+            <div>
+                <table id="userTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Last name</th>
+                            <th>Email</th>
+                            <th>Date of birth</th>
+                            <th>Address</th>
+                            <th>Phone number</th>
+                            <th>Driver license number</th>
+                            <th> </th>
+                            <th> </th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="userTableData"></tbody>
+                </table>
+
+            </div>
+        </div>
+
+
+        <div style="display: none;" id="updateUserDiv">
+            <div class="mainContainer">
+                <div id="title"></div>
+                <div>Update user details</div>
+                <form id="userForm" action="#">
+                    <div class="userDetails">
+
+                        <div class="inputBox">
+                            <span class="details">Name</span>
+                            <input type="text" name="userName" id="userName">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Last name</span>
+                            <input type="text" name="lastName" id="lastName">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Email</span>
+                            <input type="text" name="email" id="email">
+                        </div>
+
+                        <div class="inputBox">
+                            <span class="details">Date of birth</span>
+                            <input type="date" name="dateOfBirth" id="dateOfBirth">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Address</span>
+                            <input type="text" name="address" id="address">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Phone number</span>
+                            <input type="text" name="phoneNumber" id="phoneNumber">
+                        </div>
+                        <div class="inputBox">
+                            <span class="details">Driver license</span>
+                            <input type="text" name="driverLicense" id="driverLicense">
+                        </div>
+                        <div style="visibility: hidden;" id="userId"></div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" name="userUpdate" id="userUpdate" value="Update">
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>

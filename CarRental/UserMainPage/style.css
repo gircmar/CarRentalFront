@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+}
+body{
+    
+    height: 100vh;
+    padding: 10px;
+    background-color: #24252a;
+
+}
+li,a,button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 30px 10%;
+}
+.logo{
+    cursor: pointer;
+}
+.links{
+    list-style: none;
+}
+
+.links li{
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+.links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.links li a:hover{
+   color: darkslategray;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+#rightSideNav{
+    display: flex;
+}
+#nameNav{
+    margin-top: 8px;
+    margin-right: 20px;
+
+}
+
+/* other stuff */
+#frontPageDiv{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+    
+}
+
+#frontPageSmall{
+    display: flex;
+   
+}
+#small1{
+    max-width: 150px;
+   
+}
+#frontPage3images{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #edf0f1;
+    
+    
+}
+#bigTittle{
+    color: #edf0f1;
+    font-size: 30px;
+    text-align: center;
+}
+#frontPagePic{
+   display: flex;
+   justify-content: center;
+}
+#contactUsSmall{
+    margin-bottom: 5px;
+
+}
+#contactUs{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#carCardText{
+    background-color: #ffffff;
+    padding: 2px;
+    margin-right: 5px;
+}
+#carCard{
+    width: 200px;
+     height: 250px; 
+     background-color: #ffffff; 
+     text-align: center; 
+     border-radius: 5px;
+}
+
+#allCarsCards{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: auto;
+padding: 5px;
+gap: 10px;
+
+}
+
+#rentCarBtn{
+    background-color: #ffffff; 
+    width: 80%;
+    border-radius: 5%;
+}
+
+/* rent a car card */
+
+#mainRentACarDiv, #mainReservationsDiv{
+    display: flex;
+    justify-content: center;
+}
+
+#childRentACarDiv,#childRentACarDivReservations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    height: 300px;
+    background-color: #24252a;
+    padding: 10px;
+}
+
+#selectDateCard{
+    display: block;
+    background-color: #b3b8d4;
+    width: 200px;
+    height: 250px;
+}
+#rentCardTitle{
+    padding: 10px;
+    text-align: center;
+}
+#rentCardInputs{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#rentDetails div{
+    margin-bottom: 2px;
+   
+    
+}
+
+#rentDetails input{
+   display: flex;
+   width: 100%;
+   margin-bottom: 3px;
+}
+#price{
+    text-align: center;
+    margin-top: 5px;
+}
+#btnDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#rentBtn{
+    margin-top: 20px;
+    width: 80%;
+    margin-bottom: 10px;
+    
+}
+
+.dates{
+    margin-top: 10px;
+    text-align: center;
+    
+
+}
+.dates div{
+    font-size: 20px;
+    margin: top 5px;
+}
+.dates hr {
+    margin-top: 10px;
+}
+.datesTitle{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.price{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.confirmRent{
+    margin-top: 15px;
+    width: 80%;
+    margin-left: 20px;
+}
+/* reservationns  */
+
+#childRentACarDivReservations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1300px;
+    height: 300px;
+    background-color: #24252a;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#reservationsCards{
+    display: block;
+    background-color: #b3b8d4;
+    width: 200px;
+    height: 250px;
+    
+    margin-bottom: 10px;
+   
+}
+.carReservationCard{
+    margin-right: 20px;
+    margin-bottom: 10px;
+    
+}

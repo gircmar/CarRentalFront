@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="/EnterDetailsPage/myjs.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="navContainer">
+        <header>
+            <H3 class="logo" style="color: aliceblue;">MG CAR RENTAL</H3>
+            <nav>
+                <ul class="links">
+                    <li><a href="#">Reservations</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+
+            <div id="rightSideNav">
+                <div id="nameNav" style="color: white;"></div>
+                <a class="signup" href="#"><button id="logOutNav">Log out</button></a>
+            </div>
+        </header>
+    </div>
+    <div class="signupdiv">
+        <div class="mainContainer">
+            <div id="title"></div>
+            <div class="title2">Please enter information to continue</div>
+            <form action="#">
+                <div class="userDetails">
+                    <div class="inputBox">
+                        <span class="details">Address</span>
+                        <input type="text" name="address" id="address">
+                    </div>
+                    <div class="inputBox">
+                        <span class="details">Phone number</span>
+                        <input type="text" name="phoneNumber" id="phoneNumber">
+                    </div>
+                    <div class="inputBox">
+                        <span class="details">Driver license number</span>
+                        <input type="text" name="driverLicenseNumber" id="driverLicenseNumber">
+                    </div>
+                    <div class="inputBox">
+                        <span class="details">Date of birth</span>
+                        <input type="date" id="dateOfBirth">
+
+                    </div>
+                    <div style="margin-top: 5px;" id="message"></div>
+                </div>
+                <div class="button">
+                    <input type="submit" name="register" id="confirm" value="Confirm">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

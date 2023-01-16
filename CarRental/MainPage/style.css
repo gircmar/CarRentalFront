@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252a;
+}
+li,a,button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 30px 10%;
+}
+.logo{
+    cursor: pointer;
+}
+.links{
+    list-style: none;
+}
+
+.links li{
+    display: inline-block;
+    padding: 0px 20px;
+
+}
+
+.links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.links li a:hover{
+   color: darkslategray;
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+/* other stuff */
+#frontPageDiv{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#frontPageSmall{
+    display: flex;
+   
+}
+#small1{
+    max-width: 150px;
+   
+}
+#frontPage3images{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #edf0f1;
+    
+    
+}
+#bigTittle{
+    color: #edf0f1;
+    font-size: 30px;
+    text-align: center;
+}
+#frontPagePic{
+   display: flex;
+   justify-content: center;
+}
+#contactUsSmall{
+    margin-bottom: 5px;
+
+}
+#contactUs{
+    display: flex;
+    justify-content: center;
+}
+
+#carCardText{
+    background-color: #ffffff;
+    padding: 2px;
+    margin-right: 5px;
+}
+#carCard{
+    width: 200px;
+     height: 230px; 
+     background-color: #ffffff; 
+     text-align: center; 
+     border-radius: 5px;
+}
+
+#allCarsCards{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin: auto;
+padding: 5px;
+gap: 10px;
+
+}
+
+

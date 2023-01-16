@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="/Login/myjs.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <div class="navContainer">
+        <header>
+            <H3 onclick="loadMainPageLogin()" class="logo" style="color: aliceblue;">MG CAR RENTAL</H3>  
+              <nav>
+                    
+                </nav>
+                <div>
+                <a class="login" href="#"><button id="logInNav">Log in</button></a>
+                <a class="signup" href="#"><button id="signUpNav">Sign up</button></a>
+               </div>
+            </header>
+        </div>
+        <div class="signupdiv">
+        <div class="mainContainer">
+            <div class="title"> Log in</div>
+            <form action="#">
+                <div class="userDetails">
+                    
+                    <div class="inputBox">
+                        <span class="details">Email</span>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class="inputBox">
+                        <span class="details">Password</span>
+                        <input type="text" name="password" id="password">
+                    </div>
+                    <div id="loginMessage"></div>
+        
+                </div>
+                <div class="button">
+                    <input type="submit" name="login" id="login" value="Log in">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
