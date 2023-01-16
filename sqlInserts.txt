@@ -1,0 +1,9 @@
+//new Car
+
+insert into car (id,brand,"name",license_plate,production_date,engine,classification,gear_box,rented,doors,seats,price_per_day) 
+values (3,'PORSHE','bmw','ATB548','2021-01-02','Turbo 6l','SPORT','MT','FALSE',4,4,50)
+
+
+//give admin 
+
+insert into user_roles (user_id,role_id) values (1,2)
